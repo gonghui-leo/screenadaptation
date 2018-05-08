@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 8
+    }
+}
+
+dependencies {
+}
+publish {
+    userOrg = 'gonghui'
+    repoName = "maven"
+    groupId = 'com.gonghui.screen'
+    artifactId = 'screen-adaptation'
+    publishVersion = '1.0'
+    desc = 'Android screen adaptation'
+    website = 'https://github.com/gonghui-leo/screenadaptation'
+}
